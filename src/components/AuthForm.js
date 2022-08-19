@@ -16,17 +16,19 @@ const AuthForm = () => {
 
         const username = usernameInp.current.value;
         const password = pwdInp.current.value;
+        
 
         if(isLoginForm){
             console.log('Login -->', username, password);
         }else{
-            const email = emailInp.current.value;
+            // const email = emailInp.current.value;
             // console.log('Register -->', username, password, email);
             regFn({
                 username,
                 password,
-                email
+                // email
             }).then(res => console.log(res));
+            
         }
 
         

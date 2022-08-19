@@ -5,14 +5,16 @@ export const authApi = createApi(
     {
         reducerPath:'authApi',
         baseQuery:fetchBaseQuery({
-            baseUrl:'http://localhost:1337/api/'
+         
+            baseUrl:'http://127.0.0.1:3007/api/'
+          
         }),
         endpoints(build){
             return {
                 register: build.mutation({
                     query(user) {
                         return {
-                            url:'auth/local/register',
+                            url:'reguser',
                             method:"post",
                             body:user,
                         }
