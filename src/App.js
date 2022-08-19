@@ -4,7 +4,7 @@ import ProfilePage from './pages/ProfilePage';
 import HomePage from './pages/HomePage';
 import Layout from './components/Layout';
 import AuthPage from './pages/AuthPage';
-
+//
 const App = () => {
   return (
     <Layout> 
